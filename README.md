@@ -3,6 +3,8 @@ This is a [Compose for Web](https://compose-web.ui.pages.jetbrains.team/) port o
 
 <img src="./docs/demo.gif" width="396">
 
+You can try it [HERE](https://foso.github.io/compose-snake-web/index.html)
+
 ### Running web application
 ```
 ./gradlew jsBrowserRun
