@@ -1,4 +1,4 @@
-package com.arkivanov.composnake
+package de.jensklingenberg.composesnake
 
 enum class Direction {
     LEFT, UP, RIGHT, DOWN

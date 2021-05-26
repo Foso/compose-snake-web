@@ -8,12 +8,7 @@ import kotlinx.browser.document
 import org.jetbrains.compose.common.ui.Modifier
 import org.w3c.dom.events.KeyboardEvent
 
-@Composable
-fun FoodCell() {
-    RadioButton(
-        selected = true
-    )
-}
+
 
 @Composable
 fun RadioButton(selected: Boolean) {
@@ -26,17 +21,9 @@ fun RadioButton(selected: Boolean) {
         ) {}
 }
 
-@Composable
-fun EmptyCell() {
-    Input(
-        type = InputType.Checkbox
-    ) {}
-}
 
-@Composable
-fun SnakeCell() {
-    Checkbox(true)
-}
+
+
 
 @Composable
 fun Checkbox(selected: Boolean) {

@@ -1,6 +1,8 @@
-package com.arkivanov.composnake
+package de.jensklingenberg.composesnake
 
 import androidx.compose.runtime.State
+import de.jensklingenberg.composesnake.Board
+import de.jensklingenberg.composesnake.Direction
 
 interface Game {
 

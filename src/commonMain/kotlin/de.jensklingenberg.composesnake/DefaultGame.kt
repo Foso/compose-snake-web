@@ -1,4 +1,4 @@
-package com.arkivanov.composnake
+package de.jensklingenberg.composesnake
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State

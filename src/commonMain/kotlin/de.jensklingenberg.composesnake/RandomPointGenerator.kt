@@ -1,4 +1,4 @@
-package com.arkivanov.composnake
+package de.jensklingenberg.composesnake
 
 class RandomPointGenerator {
 

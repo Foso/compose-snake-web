@@ -1,4 +1,4 @@
-package com.arkivanov.composnake
+package de.jensklingenberg.composesnake
 
 data class Point(
     val x: Int,

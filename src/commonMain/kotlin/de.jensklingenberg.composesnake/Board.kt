@@ -1,4 +1,4 @@
-package com.arkivanov.composnake
+package de.jensklingenberg.composesnake
 
 data class Board(
     val snake: Snake?,
