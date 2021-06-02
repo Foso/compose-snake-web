@@ -1,11 +1,7 @@
 package com.arkivanov.composnake
 
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.web.css.padding
-import androidx.compose.web.css.px
-import androidx.compose.web.elements.Div
-import androidx.compose.web.elements.Text
-import androidx.compose.web.renderComposable
+
 import de.jensklingenberg.composesnake.DefaultGame
 import de.jensklingenberg.composesnake.Direction
 import de.jensklingenberg.composesnake.Game
@@ -15,6 +11,11 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import org.jetbrains.compose.common.foundation.layout.Box
 import org.jetbrains.compose.common.ui.Modifier
+import org.jetbrains.compose.web.css.padding
+import org.jetbrains.compose.web.css.px
+import org.jetbrains.compose.web.dom.Div
+import org.jetbrains.compose.web.dom.Text
+import org.jetbrains.compose.web.renderComposable
 
 fun main() {
     val game: Game = DefaultGame()
@@ -28,7 +29,7 @@ fun main() {
             }
         }
 
-        Div(style = { padding(25.px) }) {
+        Div(attrs = { style { padding(25.px) } }) {
             Text("Points: "+game.board.value.points)
 
             Box(

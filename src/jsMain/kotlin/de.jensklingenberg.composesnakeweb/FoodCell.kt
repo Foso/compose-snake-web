@@ -1,13 +1,12 @@
 package de.jensklingenberg.composesnakeweb
 
 import androidx.compose.runtime.Composable
-import androidx.compose.web.attributes.InputType
-import androidx.compose.web.attributes.checked
-import androidx.compose.web.elements.Input
 import kotlinx.browser.document
 import org.jetbrains.compose.common.ui.Modifier
+import org.jetbrains.compose.web.attributes.InputType
+import org.jetbrains.compose.web.attributes.checked
+import org.jetbrains.compose.web.dom.Input
 import org.w3c.dom.events.KeyboardEvent
-
 
 
 @Composable

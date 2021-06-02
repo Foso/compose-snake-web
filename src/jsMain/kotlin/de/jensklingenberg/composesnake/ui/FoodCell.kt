@@ -1,10 +1,10 @@
 package de.jensklingenberg.composesnake.ui
 
 import androidx.compose.runtime.Composable
-import androidx.compose.web.attributes.InputType
-import androidx.compose.web.elements.Input
 import de.jensklingenberg.composesnakeweb.Checkbox
 import de.jensklingenberg.composesnakeweb.RadioButton
+import org.jetbrains.compose.web.attributes.InputType
+import org.jetbrains.compose.web.dom.Input
 
 @Composable
 actual fun FoodCell() {
