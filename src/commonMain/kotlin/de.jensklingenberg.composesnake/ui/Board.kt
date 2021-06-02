@@ -2,7 +2,6 @@ package de.jensklingenberg.composesnake.ui
 
 import androidx.compose.runtime.Composable
 import de.jensklingenberg.composesnake.Board
-import de.jensklingenberg.composesnake.forEachFast
 import org.jetbrains.compose.common.foundation.layout.Column
 import org.jetbrains.compose.common.foundation.layout.Row
 import org.jetbrains.compose.common.material.Text
@@ -17,9 +16,9 @@ fun Board(board: Board) {
     }
 
     Column {
-        board.grid.forEachFast { row ->
+        board.grid.forEach { row ->
             Row {
-                row.forEachFast { cell ->
+                row.forEach { cell ->
                     when (cell) {
                         board.food -> FoodCell()
                         in board.snake.points -> SnakeCell()
