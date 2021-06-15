@@ -5,5 +5,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "web-getting-started"
+rootProject.name = "compose-snake-web"
 

@@ -17,7 +17,7 @@ fun RadioButton(selected: Boolean) {
                 checked(selected)
                 onCheckboxInput {}
             }
-        ) {}
+        )
 }
 
 
@@ -33,7 +33,7 @@ fun Checkbox(selected: Boolean) {
             checked(selected)
             onCheckboxInput {}
         }
-    ) {}
+    )
 }
 
 
