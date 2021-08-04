@@ -10,12 +10,11 @@ import org.w3c.dom.events.KeyboardEvent
 
 
 @Composable
-fun RadioButton(selected: Boolean) {
+fun RadioButton() {
         Input(
             type = InputType.Radio,
             attrs = {
-                checked(selected)
-                onCheckboxInput {}
+                checked()
             }
         )
 }
@@ -25,13 +24,11 @@ fun RadioButton(selected: Boolean) {
 
 
 @Composable
-fun Checkbox(selected: Boolean) {
+fun Checkbox() {
     Input(
         type = InputType.Checkbox,
         attrs = {
-
-            checked(selected)
-            onCheckboxInput {}
+            checked()
         }
     )
 }

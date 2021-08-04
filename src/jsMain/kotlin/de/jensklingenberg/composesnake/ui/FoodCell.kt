@@ -10,13 +10,12 @@ import org.jetbrains.compose.web.dom.Input
 @Composable
 actual fun FoodCell() {
     RadioButton(
-        selected = true
     )
 }
 
 @Composable
 actual fun SnakeCell() {
-    Checkbox(true)
+    Checkbox()
 }
 
 @Composable
