@@ -5,6 +5,9 @@ import de.jensklingenberg.composesnake.Board
 import org.jetbrains.compose.common.foundation.layout.Column
 import org.jetbrains.compose.common.foundation.layout.Row
 import org.jetbrains.compose.common.material.Text
+import org.jetbrains.compose.common.ui.ExperimentalComposeWebWidgetsApi
+
+@OptIn(ExperimentalComposeWebWidgetsApi::class)
 
 @Composable
 fun Board(board: Board) {

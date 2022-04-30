@@ -10,12 +10,14 @@ import de.jensklingenberg.composesnakeweb.onKeyEvent
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import org.jetbrains.compose.common.foundation.layout.Box
+import org.jetbrains.compose.common.ui.ExperimentalComposeWebWidgetsApi
 import org.jetbrains.compose.common.ui.Modifier
 import org.jetbrains.compose.web.css.padding
 import org.jetbrains.compose.web.css.px
 import org.jetbrains.compose.web.dom.Div
 import org.jetbrains.compose.web.dom.Text
 import org.jetbrains.compose.web.renderComposable
+@OptIn(ExperimentalComposeWebWidgetsApi::class)
 
 fun main() {
     val game: Game = DefaultGame()

@@ -2,9 +2,10 @@ package de.jensklingenberg.composesnakeweb
 
 import androidx.compose.runtime.Composable
 import kotlinx.browser.document
+import org.jetbrains.compose.common.ui.ExperimentalComposeWebWidgetsApi
 import org.jetbrains.compose.common.ui.Modifier
 import org.jetbrains.compose.web.attributes.InputType
-import org.jetbrains.compose.web.attributes.checked
+
 import org.jetbrains.compose.web.dom.Input
 import org.w3c.dom.events.KeyboardEvent
 
@@ -14,7 +15,7 @@ fun RadioButton() {
         Input(
             type = InputType.Radio,
             attrs = {
-                checked()
+                this.checked(true)
             }
         )
 }
@@ -28,12 +29,13 @@ fun Checkbox() {
     Input(
         type = InputType.Checkbox,
         attrs = {
-            checked()
+            this.checked(true)
         }
     )
 }
 
 
+@OptIn(ExperimentalComposeWebWidgetsApi::class)
 fun Modifier.onKeyEvent(listener: (KeyboardEvent) -> Unit): Modifier {
     document.addEventListener("keydown", { event ->
         val eve = (event as KeyboardEvent)

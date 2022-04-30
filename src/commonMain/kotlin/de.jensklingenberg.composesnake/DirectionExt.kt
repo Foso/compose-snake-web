@@ -1,7 +1,5 @@
 package de.jensklingenberg.composesnake
 
-import de.jensklingenberg.composesnake.Direction
-
 fun Direction.invert(): Direction =
     when (this) {
         Direction.LEFT -> Direction.RIGHT
